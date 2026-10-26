@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyond the Screen | Guided Digital Help</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <div class="eyebrow">DIGITAL INCLUSION · STUDENT PROTOTYPE</div>
+    <h1>Beyond the Screen</h1>
+    <p class="lead">Clearer steps. More confidence. Greater digital independence.</p>
+    <p class="notice">A practice demo with sample guidance — not an official government service.</p>
+  </header>
+  <main>
+    <section aria-labelledby="tasks-heading">
+      <h2 id="tasks-heading">Choose a guided task</h2>
+      <p class="intro">Select a topic to view its steps. Take your time; you can open and close each guide.</p>
+      <div class="task-grid">
+      {% for task in tasks %}
+        <details class="task-card">
+          <summary>
+            <span class="task-title">{{ task.title }}</span>
+            <span class="task-summary">{{ task.summary }}</span>
+            <span class="audience">Designed for: {{ task.audience }}</span>
+          </summary>
+          <ol>
+            {% for step in task.steps %}<li>{{ step }}</li>{% endfor %}
+          </ol>
+        </details>
+      {% endfor %}
+      </div>
+    </section>
+    <section class="safety" aria-labelledby="safety-heading">
+      <h2 id="safety-heading">A simple safety reminder</h2>
+      <p>Never share your password or one-time passcode. For official services, use verified websites or contact channels.</p>
+    </section>
+  </main>
+  <footer>Concept prototype · Built to explore accessible digital guidance</footer>
+</body>
+</html>

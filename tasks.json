@@ -1,0 +1,38 @@
+[
+  {
+    "id": "find-service-info",
+    "title": "Find reliable service information",
+    "audience": "First-time digital-service users",
+    "summary": "A practice guide for checking that information comes from an official source.",
+    "steps": [
+      "Identify the organisation responsible for the service.",
+      "Look for an official website or verified contact channel.",
+      "Read the eligibility and document list carefully.",
+      "If unsure, ask the official help desk before sharing personal details."
+    ]
+  },
+  {
+    "id": "prepare-online-form",
+    "title": "Prepare before starting an online form",
+    "audience": "People who find online forms confusing",
+    "summary": "A preparation checklist; it does not submit a real form.",
+    "steps": [
+      "Read the form instructions before entering information.",
+      "Check which documents are required.",
+      "Ask a trusted helper to explain unfamiliar words if needed.",
+      "Review every field before submitting through the official website."
+    ]
+  },
+  {
+    "id": "stay-safer-online",
+    "title": "Pause before sharing information",
+    "audience": "New smartphone users",
+    "summary": "Simple reminders to reduce common online safety mistakes.",
+    "steps": [
+      "Do not share passwords or one-time passcodes with anyone.",
+      "Check the website address and sender carefully.",
+      "Avoid links that pressure you to act immediately.",
+      "Use an official contact channel to verify unexpected requests."
+    ]
+  }
+]
